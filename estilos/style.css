@@ -1,0 +1,52 @@
+body {
+    background-image: linear-gradient(to left top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    /* Para centrar elementos */
+    display: flex;
+    /* Centrar horizontalmente */
+    justify-content: center;
+    /* Centrar veticalmente */
+    align-items: center;
+    height: 100vh;
+}
+
+/* Estilar carta de pregunta */
+#concurso {
+    background-color:#FCF7FF;
+    width: 30rem;
+    padding: 4rem;
+    text-align: center;
+}
+
+/* Titulo principal */
+h1 {
+    color:#051937;
+    font-size: 3rem;
+    text-align: center;
+    padding: 2px 0;
+}
+
+#pregunta {
+    font: size 1.7rem;
+    color: #319aa1;
+}
+
+.boton {
+    background-color: #3bff3b;
+    color: black;
+    width: 250 px;
+    font-size: 20px;
+    border-radius: 0.3rem;
+    padding: 10px 20px;
+    margin: 10px 100px 10px;
+    outline: 0;
+}
+
+/* Cuando se pase cursor por el boton */
+.boton:hover {
+    cursor: pointer;
+    background-color:#48b948;
+}
+
+#progreso{
+    font-size: 20px;
+}
