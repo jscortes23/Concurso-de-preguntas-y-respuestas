@@ -1,5 +1,4 @@
 /* Logica de la aplicación */
-import {pregunta} from './datos/datos.js';
-import './modelos/Pregunta.js';
+import {preguntas} from './datos/preguntas.js';
 
-//console.log(pregunta);
+console.log(preguntas);

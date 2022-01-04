@@ -1,5 +1,5 @@
 /* Clase pregunta */
-class Pregunta {
+export class Pregunta {
 
     /**
      * 
@@ -14,6 +14,12 @@ class Pregunta {
         this.opciones = opciones;
         this.respuesta = respuesta;
     }
+
+    /**
+     * 
+     * @param {string} opcion texto de la opcion elegida
+     * @returns {boolean} es true si la respuesta es correcta
+     */
 
     /* Metodos */
     VerificarRespuesta(opcion) {
