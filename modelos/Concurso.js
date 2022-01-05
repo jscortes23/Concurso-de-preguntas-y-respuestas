@@ -44,7 +44,7 @@ export class Concurso {
     /* Para avanzar */
     respondio(respuesta){
         if (this.preguntaEnJuego().VerificarRespuesta(respuesta)) {
-            this.score++;
+            this.puntaje++;
         }
         this.preguntaActual++;
     }
