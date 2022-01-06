@@ -4,11 +4,14 @@ export class Conectar {
 
     /**
      * 
-     * @param {string} pregunta mostrar pregunta en pagina web
+     * @param {string} pregunta texto de la pregunta
+     * @param {string} categoria texto de la categoria
      */
-    mostrarPregunta(pregunta) {
+    mostrarPregunta(pregunta, categoria, dificultad) {
         const titulo = document.getElementById("pregunta");
         titulo.innerHTML = pregunta;
+        const subTitulo = document.getElementById("categoria");
+        subTitulo.innerHTML = `Categoria: ${categoria} - Nivel: ${dificultad}`;
     }
 
     /**

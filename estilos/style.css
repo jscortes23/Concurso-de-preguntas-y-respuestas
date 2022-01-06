@@ -12,22 +12,27 @@ body {
 /* Estilar carta de pregunta */
 #concurso {
     background-color:#FCF7FF;
-    width: 30rem;
-    padding: 4rem;
+    width: 550px;
+    padding: 30px;
     text-align: center;
 }
 
 /* Titulo principal */
 h1 {
     color:#051937;
-    font-size: 3rem;
+    font-size: 30px;
     text-align: center;
     padding: 2px 0;
 }
 
+#categoria {
+    font-size: 25px;
+    color:#0882c9;
+}
+
 #pregunta {
-    font: size 1.7rem;
-    color: #319aa1;
+    font: size 20px;
+    color: #000000;
 }
 
 .boton {
