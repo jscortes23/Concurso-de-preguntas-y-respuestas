@@ -34,4 +34,28 @@ export class Conectar {
             todasOpciones.append(boton);
         }
     }
+
+
+    /**
+     * 
+     * @param {number} puntaje total de puntos
+     */
+    mostrarPuntaje(puntaje){
+        const totalPuntaje = `
+        <h1>Finalizado</h1>
+        <h2>Tu puntaje fue: ${puntaje}</h2>
+        `
+        const elemento = document.getElementById("concurso");
+        elemento.innerHTML = totalPuntaje;
+    }
+
+    /**
+     * 
+     * @param {number} preguntaEnJuego pregunta actual a responder
+     * @param {number} total total de preguntas a reponder
+     */
+    mostrarProgreso(preguntaEnJuego, total){
+        const progreso = document.getElementById("progreso");
+        progreso.innerHTML = `Pregunta ${preguntaEnJuego+1} de ${total}`;
+    }
 }

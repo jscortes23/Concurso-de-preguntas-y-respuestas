@@ -10,13 +10,14 @@ import { Conectar } from './modelos/Conectar.js'
  */
 const nuevaPregunta = (concurso, conectar) => {
     if (concurso.finJuego()) {
-        console.log(concurso.puntaje)
+        conectar.mostrarPuntaje(concurso.puntaje);
     } else {
         conectar.mostrarPregunta(concurso.preguntaEnJuego().pregunta);
         conectar.mostarOpciones(concurso.preguntaEnJuego().opciones, (opcionElegida) => {
             concurso.respondio(opcionElegida);
             nuevaPregunta(concurso, conectar);
         });
+        conectar.mostrarProgreso(concurso.preguntaActual, concurso.preguntas.length)
     }
 }
 
