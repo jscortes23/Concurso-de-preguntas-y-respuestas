@@ -1,3 +1,5 @@
+import { Concurso } from "./Concurso.js";
+
 /* Para mostrar en la pagina web */
 export class Conectar {
     constructor() { }
@@ -60,5 +62,10 @@ export class Conectar {
     mostrarProgreso(preguntaEnJuego, total){
         const progreso = document.getElementById("progreso");
         progreso.innerHTML = `Pregunta ${preguntaEnJuego+1} de ${total}`;
+    }
+
+    finalizarJuego(Concurso){
+        const botonFin = document.getElementById("fin"); 
+        botonFin.addEventListener('click', ()=> Concurso.finalizar());
     }
 }

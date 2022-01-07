@@ -6,6 +6,7 @@ export class Concurso {
     /* iniciar desde 0 */
     preguntaActual = 0;
     puntaje = 0;
+    aumenta = 0;
 
     /**
      * 
@@ -33,6 +34,17 @@ export class Concurso {
     
     finJuego(){
         return this.preguntas.length === this.preguntaActual;
+    }
+
+
+    /**
+     * 
+     * @returns {number} numero de cambios de nivel
+     */
+    cambiarNivel(){
+        if (this.preguntaActual%5 == 0) {
+            this.aumenta++;
+        }
     }
 
 

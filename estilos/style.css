@@ -40,7 +40,7 @@ h1 {
     color: black;
     width: 250 px;
     font-size: 20px;
-    border-radius: 0.3rem;
+    border-radius: 5px;
     padding: 10px 20px;
     margin: 10px 100px 10px;
     outline: 0;
@@ -54,4 +54,17 @@ h1 {
 
 #progreso{
     font-size: 20px;
+}
+
+#fin  {
+    background-color:#dd5656;
+    color: black;
+    width: 200px;
+    border-radius: 5px;
+    font-size: 30px;
+}
+
+#fin:hover {
+    cursor: pointer;
+    background-color:#cf2626;
 }
