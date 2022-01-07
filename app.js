@@ -3,6 +3,7 @@ import { preguntas } from './datos/preguntas.js';
 import { Concurso } from './modelos/Concurso.js';
 import { Conectar } from './modelos/Conectar.js';
 import { Ronda } from './modelos/Ronda.js';
+
 /**
  * 
  * @param {Concurso} concurso 
@@ -22,9 +23,9 @@ const nuevaPregunta = (concurso, conectar) => {
 }
 
 function main() {
-    const concurso = new Concurso(preguntas);
     const conectar = new Conectar();
     const ronda = new Ronda(preguntas);
+    const concurso = new Concurso(ronda.facil(preguntas));
     console.log(ronda.facil(preguntas));
     nuevaPregunta(concurso, conectar);
 }

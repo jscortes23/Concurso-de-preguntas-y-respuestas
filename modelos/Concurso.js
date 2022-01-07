@@ -7,6 +7,7 @@ export class Concurso {
     preguntaActual = 0;
     puntaje = 0;
 
+
     /**
      * 
      * @param {Pregunta[]} preguntas 
