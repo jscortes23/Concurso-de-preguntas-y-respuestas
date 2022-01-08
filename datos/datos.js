@@ -30,11 +30,11 @@ export const datos = [
         pregunta: '¿Que es wait?',
         opciones: [
             'Una verdura',
-            'Un color en ingles',
+            'Esperar en ingles',
             'Pasto',
             'Esperar'
         ],
-        respuesta: 'Un color en ingles',
+        respuesta: 'Esperar en ingles',
         dificultad: 'dificil',
         categoria: 'Educación'
     },

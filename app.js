@@ -10,9 +10,8 @@ import { Ronda } from './modelos/Ronda.js';
  */
 const nuevaPregunta = (concurso, conectar) => {
     if (concurso.finJuego()) {
-        concurso.preguntaActual=5;
         conectar.mostrarPuntaje(concurso.puntaje);
-        console.log(concurso.aumenta);
+        console.log(concurso.puntaje)
 
     } else {
         conectar.mostrarPregunta(concurso.preguntaEnJuego().pregunta, concurso.preguntaEnJuego().categoria, concurso.preguntaEnJuego().dificultad);
@@ -30,7 +29,8 @@ function main() {
     const nivel = ['facil','medio','dificil','avanzado','imposible'];
     const ronda = new Ronda(preguntas);
     //const concurso = new Concurso(ronda.facil(preguntas, nivel[concurso.cambiarNivel()]));
-    const concurso = new Concurso(ronda.facil(preguntas, nivel[2]));
+    //const concurso = new Concurso(ronda.facil(preguntas, nivel[2]));
+    const concurso = new Concurso(preguntas);
     const conectar = new Conectar();
     nuevaPregunta(concurso, conectar);
 }
