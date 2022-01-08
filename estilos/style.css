@@ -68,3 +68,21 @@ h1 {
     cursor: pointer;
     background-color:#cf2626;
 }
+
+#iniciar  {
+    background-color:#5bdd56;
+    color: black;
+    width: 200px;
+    border-radius: 5px;
+    font-size: 30px;
+}
+
+#iniciar:hover {
+    cursor: pointer;
+    background-color:#00ff0d;
+}
+
+input{
+    width: 200px;
+    height: 35px;
+}
